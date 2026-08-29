@@ -1,0 +1,16 @@
+<footer>
+<b>PGL.03</b>
+<p>Movies • Videos • Songs</p>
+</footer>
+
+<script>
+function searchContent(){
+let q=document.getElementById("search").value.toLowerCase();
+document.querySelectorAll(".card").forEach(function(card){
+card.style.display=card.innerText.toLowerCase().includes(q)?"block":"none";
+});
+}
+</script>
+
+</body>
+</html>
