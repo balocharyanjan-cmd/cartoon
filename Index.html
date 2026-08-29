@@ -1,3 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PGL.03 Entertainment</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#09090d;color:white;font-family:Arial}
+header{background:#111118;padding:18px 6%;display:flex;justify-content:space-between;align-items:center}
+.logo{font-size:25px;font-weight:bold;color:#ff2855}
+nav a{color:white;text-decoration:none;margin-left:18px}
+.hero{padding:70px 6%;background:linear-gradient(120deg,#250914,#09090d)}
+.hero h1{font-size:45px;margin:10px 0}
+.hero span{color:#ff2855}
+.hero p{color:#aaa}
+.btn{display:inline-block;background:#ff2855;color:white;padding:12px 20px;border-radius:6px;text-decoration:none}
+.container{width:88%;max-width:1200px;margin:auto}
+section{padding:35px 0}
+.title{display:flex;justify-content:space-between}
+.title a{color:#ff2855}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.card{background:#15151d;border-radius:9px;overflow:hidden}
+.poster{height:220px;background:linear-gradient(135deg,#29293a,#701b3b);display:flex;align-items:center;justify-content:center;font-size:50px}
+.info{padding:13px}
+.info h3{margin:0 0 6px}
+.info p{margin:0;color:#888;font-size:13px}
+.search{width:100%;margin:25px 0;padding:14px;background:#15151d;border:1px solid #333;border-radius:7px;color:white}
+footer{padding:35px 6%;border-top:1px solid #222;color:#777}
+@media(max-width:700px){.grid{grid-template-columns:repeat(2,1fr)}.hero h1{font-size:35px}nav{display:none}}
+@media(max-width:450px){.grid{grid-template-columns:1fr}}
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="logo">PGL.03</div>
+<nav>
+<a href="#movies">Movies</a>
+<a href="#videos">Videos</a>
+<a href="#songs">Songs</a>
+</nav>
+</header>
+
+<div class="hero">
+<h1>Entertainment <span>Unlimited</span></h1>
+<p>Movies, videos and songs — all in one place.</p>
+<a class="btn" href="#movies">Explore Now</a>
+</div>
+
+<div class="container">
+
+<input class="search" id="search"
+placeholder="Search movies, videos or songs..."
+onkeyup="searchContent()">
+
+<section id="movies">
+<div class="title">
+<h2>🎬 Latest Movies</h2>
+<a href="#">View All</a>
+</div>
+
+<div class="grid">
+<div class="card"><div class="poster">🎬</div><div class="info"><h3>Featured Movie</h3><p>Movie • Latest</p></div></div>
+<div class="card"><div class="poster">🍿</div><div class="info"><h3>Action Movie</h3><p>Movie • Trending</p></div></div>
+<div class="card"><div class="poster">🎞️</div><div class="info"><h3>New Cinema</h3><p>Movie • HD</p></div></div>
+<div class="card"><div class="poster">❤️</div><div class="info"><h3>Romantic Story</h3><p>Movie • New</p></div></div>
+</div>
+</section>
+
+<section id="videos">
+<div class="title"><h2>▶️ Trending Videos</h2><a href="#">View All</a></div>
+<div class="grid">
+<div class="card"><div class="poster">▶️</div><div class="info"><h3>Official Trailer</h3><p>Video • HD</p></div></div>
+<div class="card"><div class="poster">🎥</div><div class="info"><h3>Behind The Scenes</h3><p>Video • Exclusive</p></div></div>
+<div class="card"><div class="poster">📺</div><div class="info"><h3>Entertainment Video</h3><p>Video • Trending</p></div></div>
+<div class="card"><div class="poster">🎬</div><div class="info"><h3>Music Video</h3><p>Video • Latest</p></div></div>
+</div>
+</section>
+
+<section id="songs">
+<div class="title"><h2>🎵 Popular Songs</h2><a href="#">View All</a></div>
+<div class="grid">
+<div class="card"><div class="poster">🎵</div><div class="info"><h3>Latest Song</h3><p>Song • 2026</p></div></div>
+<div class="card"><div class="poster">🎧</div><div class="info"><h3>Top Hit</h3><p>Song • Trending</p></div></div>
+<div class="card"><div class="poster">🎶</div><div class="info"><h3>Romantic Track</h3><p>Song • Popular</p></div></div>
+<div class="card"><div class="poster">💿</div><div class="info"><h3>New Release</h3><p>Song • Latest</p></div></div>
+</div>
+</section>
+
+</div>
+
 <footer>
 <b>PGL.03</b>
 <p>Movies • Videos • Songs</p>
